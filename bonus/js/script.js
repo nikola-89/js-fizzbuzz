@@ -15,19 +15,19 @@ for (var i = 1; i < 101; i++) {
 
 // **********************************************
 
-var i = 1;
-while (i < 101) {
-    if (i % 3 == 0 && i % 5 == 0) {
+var x = 1;
+while (x < 101) {
+    if (x % 3 == 0 && x % 5 == 0) {
         document.getElementById('list_while').innerHTML += '<li class="color-fizzbuzz">' + 'FizzBuzz' + '</li>';
     }
-    else if (i % 3 == 0) {
+    else if (x % 3 == 0) {
         document.getElementById('list_while').innerHTML += '<li class="color-fizz">' + 'Fizz' + '</li>';
     }
-    else if (i % 5 == 0) {
+    else if (x % 5 == 0) {
         document.getElementById('list_while').innerHTML += '<li class="color-buzz">' + 'Buzz' + '</li>';
     }
     else {
-        document.getElementById('list_while').innerHTML += '<li>' + i + '</li>';
+        document.getElementById('list_while').innerHTML += '<li>' + x + '</li>';
     }
-    i++;
+    x++;
 }
