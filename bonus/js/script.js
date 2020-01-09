@@ -1,16 +1,33 @@
+for (var i = 1; i < 101; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        document.getElementById('list_for').innerHTML += '<li class="color-fizzbuzz">' + 'FizzBuzz' + '</li>';
+    }
+    else if (i % 3 == 0) {
+        document.getElementById('list_for').innerHTML += '<li class="color-fizz">' + 'Fizz' + '</li>';
+    }
+    else if (i % 5 == 0) {
+        document.getElementById('list_for').innerHTML += '<li class="color-buzz">' + 'Buzz' + '</li>';
+    }
+    else {
+        document.getElementById('list_for').innerHTML += '<li>' + i + '</li>';
+    }
+}
+
+// **********************************************
+
 var i = 1;
 while (i < 101) {
     if (i % 3 == 0 && i % 5 == 0) {
-        document.getElementById('list').innerHTML += '<li>' + 'FizzBuzz' + '</li>';
+        document.getElementById('list_while').innerHTML += '<li class="color-fizzbuzz">' + 'FizzBuzz' + '</li>';
     }
     else if (i % 3 == 0) {
-        document.getElementById('list').innerHTML += '<li>' + 'Fizz' + '</li>';
+        document.getElementById('list_while').innerHTML += '<li class="color-fizz">' + 'Fizz' + '</li>';
     }
     else if (i % 5 == 0) {
-        document.getElementById('list').innerHTML += '<li>' + 'Buzz' + '</li>';
+        document.getElementById('list_while').innerHTML += '<li class="color-buzz">' + 'Buzz' + '</li>';
     }
     else {
-        document.getElementById('list').innerHTML += '<li>' + i + '</li>';
+        document.getElementById('list_while').innerHTML += '<li>' + i + '</li>';
     }
     i++;
 }
